@@ -54,4 +54,4 @@ headers1 = {'Content-Type': 'application/json',
 
 url = "https://{0}/catalog-service/api/consumer/requests?limit={1}&$orderby=requestNumber+desc".format(host, 50)
 response = requests.get(url, headers=headers1, verify=False)
-print json.dumps(response.json())
+print (json.dumps(response.json()))
